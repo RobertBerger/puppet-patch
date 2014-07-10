@@ -1,5 +1,7 @@
 #patch
 
+slightly patched - to allow for variable owber and group
+
 ##Overview
 
 Manage and apply diff files on original files using the patch command.

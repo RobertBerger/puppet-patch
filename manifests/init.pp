@@ -31,8 +31,8 @@ class patch (
 
   file { $patch_dir:
     ensure  => $patch_dir_ensure,
-    owner   => $owner,
-    group   => $group,
+    owner   => 'genius',
+    group   => 'genius',
     mode    => '0640',
   }
 
