@@ -14,6 +14,8 @@ define patch::file (
   $target = $title,
   $diff_content = undef,
   $diff_source = undef,
+  $owner = undef,
+  $group = undef,
   $prefix = undef,
   $path = ['/usr/local/bin', '/usr/bin', '/bin'],
   $cwd = '/',
@@ -33,8 +35,8 @@ define patch::file (
     ensure  => file,
     content => $diff_content,
     source  => $diff_source,
-    owner   => 'root',
-    group   => 'root',
+    owner   => $owner,
+    group   => $group,
     mode    => '0640',
   }
 
